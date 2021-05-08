@@ -1,8 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");
 require("dotenv").config();
 const ObjectId = require("mongodb").ObjectID;
+const cors = require("cors");
 
 const app = express();
 // skejfkf
@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const user = process.env.USER;
 const userPassword = process.env.USER_PASSWORD;
 const dbName = process.env.DB_NAME;
+
+
 
 // console.log(user, userPassword, dbName);
 
